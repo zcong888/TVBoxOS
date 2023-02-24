@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:lineSpacingExtra="@dimen/ts_50"
         android:lineSpacingMultiplier="0"
-        android:text="http://tvbox.zcong.top:81/tvbox/about.txt"
+        android:text="本软件来自github.com上的tvbox项目二次开发，所有资源来自网上，不参与制作上传储存等内容。软件公供学习参考。/n/n影视资源永不过期，/n作者：zcong"
         android:textColor="@color/color_CC000000"
         android:textSize="@dimen/ts_24" />
 
