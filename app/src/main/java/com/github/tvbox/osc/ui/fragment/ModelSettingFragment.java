@@ -275,7 +275,29 @@ public class ModelSettingFragment extends BaseLazyFragment {
             }
         });
 
-
+        findViewById(R.id.llApi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FastClickCheckUtil.check(v);
+                ApiDialog dialog = new ApiDialog(mActivity);
+                EventBus.getDefault().register(dialog);
+                dialog.setOnListener(new ApiDialog.OnListener() {
+                    @Override
+                    public void onchange(String api) {
+                        Hawk.put(HawkConfig.API_URL, api);
+                        tvApi.setText(api);
+                    }
+                });
+                dialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        ((BaseActivity) mActivity).hideSysBar();
+                        EventBus.getDefault().unregister(dialog);
+                    }
+                });
+                dialog.show();
+            }
+        });
 
 
         findViewById(R.id.llMediaCodec).setOnClickListener(new View.OnClickListener() {
