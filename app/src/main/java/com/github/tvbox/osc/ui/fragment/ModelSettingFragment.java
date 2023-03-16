@@ -295,7 +295,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
                         EventBus.getDefault().unregister(dialog);
                     }
                 });
-                dialog.show();
+    /*             dialog.show();    zcong改2023.3.17*/
             }
         });
 
