@@ -56,7 +56,7 @@ public class ApiDialog extends BaseDialog {
         tvAddress = findViewById(R.id.tvAddress);
         inputApi = findViewById(R.id.input);
         //内置网络接口在此处添加
-        inputApi.setText(Hawk.get(HawkConfig.API_URL, "http://tvbox.zcong.top:81/tvbox.txt"));
+        inputApi.setText(Hawk.get(HawkConfig.API_URL, "TV影盒已内置优质资源，此处预留\n%s"));
         findViewById(R.id.inputSubmit).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
