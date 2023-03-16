@@ -110,7 +110,8 @@
             </LinearLayout>
 
             <LinearLayout
-                    android:id="@+id/llApi"
+                    android:id="@+id/llHomeApi"
+      <!--          android:id="@+id/llApi"                     --zcong改2013.3.16-->
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/vs_60"
                     android:layout_marginBottom="@dimen/vs_10"
@@ -134,7 +135,8 @@
                         android:layout_weight="1" />
 
                 <TextView
-                        android:id="@+id/tvApi"
+           <!---        android:id="@+id/tvApi"                --zcong改2023.3.16-->
+                        android:id="@+id/tvHomeApi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ellipsize="middle"
@@ -147,7 +149,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/vs_10"
                         android:layout_marginLeft="@dimen/vs_10"
-                        android:text=">"
+                        android:text=">>>>>"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/ts_30" />
             </LinearLayout>
