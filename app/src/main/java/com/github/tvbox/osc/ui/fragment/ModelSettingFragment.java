@@ -101,7 +101,7 @@ public class ModelSettingFragment extends BaseLazyFragment {
         tvRender = findViewById(R.id.tvRenderType);
         tvScale = findViewById(R.id.tvScaleType);   
         tvApi = findViewById(R.id.tvApi);      
-        tvApi.setText(Hawk.get(HawkConfig.API_URL, "3.0.1 更换服务器 | tv zcong >"));
+        tvApi.setText(Hawk.get(HawkConfig.API_URL, "version 3.0.1 <更换服务器：tv zcong 81>"));
         tvHomeApi = findViewById(R.id.tvHomeApi);
         tvDns = findViewById(R.id.tvDns);
         tvHomeRec = findViewById(R.id.tvHomeRec);
