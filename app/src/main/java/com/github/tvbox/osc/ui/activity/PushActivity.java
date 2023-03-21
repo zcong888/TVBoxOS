@@ -62,7 +62,7 @@ public class PushActivity extends BaseActivity {
 
     private void refreshQRCode() {
         String address = ControlManager.get().getAddress(false);
-        tvAddress.setText(String.format("TV影盒已内置优质资源，此处预留\n%s", address));
+        tvAddress.setText(String.format("zxy影视优质资源，此处预留\n%s", address));
         ivQRCode.setImageBitmap(QRCodeGen.generateBitmap(address, AutoSizeUtils.mm2px(this, 300), AutoSizeUtils.mm2px(this, 300), 4));
     }
 
