@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://se.zcong.top:999/tvbox.txt");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://se.zcong.tk:999/tvbox.txt");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
